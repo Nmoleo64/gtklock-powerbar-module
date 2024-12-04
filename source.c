@@ -95,7 +95,7 @@ static void setup_powerbar(struct Window *ctx) {
 	}
 
 	if(suspend_command && suspend_command[0] != '\0') {
-		POWERBAR(ctx)->suspend_button = gtk_button_new_from_icon_name("gtklock-powerbar-moon-outline-symbolic", GTK_ICON_SIZE_BUTTON);
+		POWERBAR(ctx)->suspend_button = gtk_button_new_from_icon_name("system-suspend", GTK_ICON_SIZE_BUTTON);
 		gtk_widget_set_name(POWERBAR(ctx)->suspend_button, "suspend-button");
 		//gtk_widget_set_tooltip_text(POWERBAR(ctx)->suspend_button, "Suspend");
 		gtk_button_set_always_show_image(GTK_BUTTON(POWERBAR(ctx)->suspend_button), TRUE);
