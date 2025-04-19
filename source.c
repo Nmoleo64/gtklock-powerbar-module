@@ -79,7 +79,7 @@ static void setup_powerbar(struct Window *ctx) {
 		gtk_widget_set_name(POWERBAR(ctx)->poweroff_button, "poweroff-button");
 		//gtk_widget_set_tooltip_text(POWERBAR(ctx)->poweroff_button, "Poweroff");
 		gtk_button_set_always_show_image(GTK_BUTTON(POWERBAR(ctx)->poweroff_button), TRUE);
-		if(show_labels) gtk_button_set_label(GTK_BUTTON(POWERBAR(ctx)->poweroff_button), "Poweroff");
+		if(show_labels) gtk_button_set_label(GTK_BUTTON(POWERBAR(ctx)->poweroff_button), "Shutdown");
 		g_signal_connect(POWERBAR(ctx)->poweroff_button, "clicked", G_CALLBACK(button_clicked), poweroff_command);
 		gtk_container_add(GTK_CONTAINER(POWERBAR(ctx)->box), POWERBAR(ctx)->poweroff_button);
 	}
